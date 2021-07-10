@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacén Los Yuyitos</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome-free-5.15.2-web/css/all.css' %}">
+</head>
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <header>
+   
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="{% static 'img/logo2.png' %}" alt="" width="80px">
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Equipo</a>
+                    <a href="#" id="enlace-quienes" class="btn-header">Quienes Somos</a>
+                    <a href="#" id="enlace-productos" class="btn-header">Productos</a>
+                    <a href="#" id="enlace-ofertas" class="btn-header">Ofertas</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                    
+                </div>
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+                
+            </div>
+             
+            
+        </nav>
+
+        <div class="textos">
+                <h1>Almacén Yuyitos</h1>
+                <h2>Productos al Alcance de la mano</h2>
+        </div>
+    </header>
+      
+    <main>
+
+        <div id="contenedor_carousel">
+               <div class="carousel">
+                    <div class="wrap">
+                      <ul>
+                          <li id="slider"> <img src="{% static 'img/slider1.png' %}" alt=""></li>
+                          <li id="slider1"><img src="{% static 'img/slider2.png' %}" alt=""></li>
+                         <li id="slider2"><img src="{% static 'img/fondoheader.jpg' %}" alt=""></li>
+                         <li id="slider3"><img src="{% static 'img/verdudas.jpg' %}" alt=""></li>
+                     </ul>
+                  </div>
+              </div>
+         </div>
+
+        <section class="team contenedor"  id="equipo" >
+            <h3>Nuestro equipo</h3>
+            <p class="after">Conoce a los Integrantes de Nuestro Local</p>
+            <div class="card">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="{% static 'img/dueño.jpg' %}" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Juan Rojas</h4>
+                        <p>Dueño del Local</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="{% static 'img/juanitagomez.jpg' %}" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Juanita Gómez</h4>
+                        <p>Dueña del Local</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="{% static 'img/vendedor1.jpg' %}" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Julio Benegas</h4>
+                        <p>Vendedor del Local</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="{% static 'img/vendedor2.jpg' %}" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Gabriel Torres</h4>
+                        <p>Vendedor del Local</p>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="{% static 'img/vendedor3.jpg' %}" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>Isaac Reyes</h4>
+                        <p>Vendedor del Local</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="about" id="quienes">
+            <div class="contenedor">
+                <h3>¿Quienes Somos?</h3>
+                
+                <div class="quienes">
+                    <div class="caja-quienes">
+                        
+                     
+                        <p>La Familia Gómez - Rojas se ha unido para generar un emprendimiento familiar tras la cRisis Social y Global que se vive actualmente
+                            con el fin de mantener ingresos familiares diariamente  </p>
+                        <br>
+                        
+                        <h4>Nuestro Objetivo</h4>
+                        <p>Vender productos a la comunidad a precio justo sin fines de lucro , nuestra meta es aliivianar
+                            el bolsillo de los chilenos en estos tiempos de pandemia
+                        </p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="work contenedor" id="productos">
+            <h3>Nuestros Productos</h3>
+            <p class="after">¡A los mejores precios!</p>
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                    <li class="filter" data-nombre='noperecibles'>Alimentos no Perecibles</li>
+                    <li class="filter" data-nombre='perecibles'>Alimentos Perecibles</li>
+                    <li class="filter" data-nombre='bebidas'>bebidas</li>
+                    <li class="filter" data-nombre='aseo'>Artículos de Aseo</li>
+                    <li class="filter" data-nombre='bazar'>Productos de Bazar</li>
+                    
+                    <li class="filter" data-nombre='otros'>Otros</li>
+                    
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work bebidas">
+                    <div class="img-work">
+                        <img src="{% static 'img/pepsi.png' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Pepsi 3LT $1.790  
+                        </h4>
+                        
+                    </div>
+                </div>
+                <div class="cont-work otros">
+                    <div class="img-work">
+                        <img src="{% static 'img/pancito.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Pan Diversos tipos $1290 kg</h4>
+                    </div>
+                </div>
+                <div class="cont-work noperecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/fides.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Fideos Variedades 400g $690</h4>
+                    </div>
+                </div>
+                <div class="cont-work noperecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/cafe.png' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Café Nescafé 400g $6.990</h4>
+                    </div>
+                </div>
+                <div class="cont-work noperecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/panmolde.png' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Pan de Molde IDEAl $1.290</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="{% static 'img/arroz.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Arroz Miraflores 1kg $1.000</h4>
+                    </div>
+                </div>
+                <div class="cont-work perecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/leche.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Leche Entera , Descremada Sabores $1000</h4>
+                    </div>
+                </div>
+                <div class="cont-work perecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/yogurt.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Yogurt 110gr Variedad en Sabores $150</h4>
+                    </div>
+                </div>
+
+                <div class="cont-work perecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/sureña.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Margarina Sureña 500g $1.000</h4>
+                    </div>
+                </div>
+                <div class="cont-work perecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/gauda.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Quedo Gauda Laminado Calo $990 1/4</h4>
+                    </div>
+                </div>
+            
+                <div class="cont-work noperecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/sals.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Salsa de tomates $300 unidad</h4>
+                    </div>
+                </div>
+                
+                <div class="cont-work bazar">
+                    <div class="img-work">
+                        <img src="{% static 'img/cuchillos.png' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Set 24 Piezas Cuchilleria Krons $1.300</h4>
+                    </div>
+                </div>
+                <div class="cont-work bazar">
+                    <div class="img-work">
+                        <img src="{% static 'img/billetera.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Billetera Hombre Alternativa $4.990</h4>
+                    </div>
+                </div>
+                <div class="cont-work perecibles">
+                    <div class="img-work">
+                        <img src="{% static 'img/jamon.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Jamón Colonial San Jorge $1.500 1/4</h4>
+                    </div>
+                </div>
+               
+                <div class="cont-work noperecibles ">
+                    <div class="img-work">
+                        <img src="{% static 'img/te.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Té EMBLEM 170gr $1.190 </h4>
+                    </div>
+                </div>
+
+               
+
+                <div class="cont-work aseo ">
+                    <div class="img-work">
+                        <img src="{% static 'img/cera.png' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Cera Brillina $1050</h4>
+                    </div>
+                </div>
+
+                <div class="cont-work bebidas ">
+                    <div class="img-work">
+                        <img src="{% static 'img/bebidaslitroycuarto.png' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4> bebidas 1lt 1/4 retornable variedades $990</h4>
+                    </div>
+                </div>
+                <div class="cont-work otros ">
+                    <div class="img-work">
+                        <img src="{% static 'img/empanadas.jpg' %}" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4> Empanada de Pino $1200 x unidad</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+    <section class="team contenedor" id="ofertas">
+            <h3>PROMOCIONES SEMANALES</h3>
+            <p class="after">¡Las mejores Ofertas Para tí!</p>
+            <div class="galeria-work">
+                {% for aux in promocion %}
+
+                    <div class="cont-work-ofertas ">
+                        <div class="img-ofertas">
+                            <img src="data:image/jpg;base64, {{aux.imagen}}" alt="">
+                        </div> 
+                    </div>
+
+                {% endfor %}
+               
+            </div>
+            
+            
+   
+    </section>
+
+
+    </main>
+
+   
+   
+    <footer id="contacto">
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="{% static 'img/logo2.png' %}" alt="">
+            </div>
+            <div class="iconos" >
+                <a href="https://wa.me/56967153370?text=Hola%20,%20Necesito%20Más%20Información%20Sobre%20Sus%20Productos%20Mi%20Nombre%20es%20:"
+                 data-action="share/whatsapp/share"><img border="0" src="{% static 'img/whatsapp.png' %}" width="45" height="45"></a>
+            </div>
+            
+            <p>La pasión y la dedicación cautiva a nuestra clientela, presiona el Logotipo Para contactarte directamente con Nuestro número Whatsapp</p>
+            <p> o a Nuestro email para despachos <b>juanito.rojasyuyitos@gmail.com</b></p>
+        </div>
+    </footer>
+    
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script> 
+    <script src="{% static 'js/filtro.js' %}"></script>
+</body>
+</html>
